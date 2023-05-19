@@ -39,7 +39,7 @@
         /* make the list items unselectable */
         -webkit-user-select: none;
         -moz-user-select: none;
-        -ms-user-select: none;
+        -ms-user-select:none;
         user-select: none;
       }
       ul li:nth-child(odd) {
@@ -86,8 +86,6 @@
         color: rgb(70, 58, 58);
       }
       
-    
-      
       /* Clear floats after the header */
       .myDiv h1:after {
         content: "";
@@ -120,6 +118,7 @@
         font-size: 16px;
 
      }
+     
      .search {
         display: flex;
         justify-content:center;
