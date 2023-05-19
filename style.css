@@ -27,6 +27,7 @@
         bottom: 20px;
     }
 
+    
     ul li {
         cursor: pointer;
         position: relative;
@@ -134,6 +135,7 @@
       
       
       .search:hover {
+
         display: flex;
         align-items: center;
         justify-content: center;

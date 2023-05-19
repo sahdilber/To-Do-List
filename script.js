@@ -4,11 +4,11 @@ var myNodelist=document.getElementsByTagName("LI");
 var i;
 
 for(i=0;i<myNodelist.length;i++){
-    var button=document.createElement("BUTTON");
+    var span=document.createElement("SPAN");
     var txt=document.createTextNode("\u00D7");
-    button.className="close";
-    button.appendChild(txt);
-    myNodelist[i].appendChild(button);
+    span.className="close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
 }
 
 // Click on a close button to hide the current list ite
@@ -34,7 +34,7 @@ list.addEventListener('click',function(ev){
 
 function newElement(){
     var li=document.createElement("li");
-    var inputValue=document.getElementById("add").value;
+    var inputValue=document.getElementById("myInput").value;
     var t=document.createTextNode(inputValue);
     li.appendChild(t);
     if(inputValue===''){
@@ -42,13 +42,13 @@ function newElement(){
     }else{
         document.getElementById("myUL").appendChild(li);
     }
-    document.getElementById("add").value="";
+    document.getElementById("myInput").value="";
 
-    var button=document.createElement("BUTTON");
+    var span=document.createElement("SPAN");
     var txt=document.createTextNode("\u00D7");
-    button.className="close";
-    button.appendChild(txt);
-    li.appendChild(button);
+    span.className="close";
+    span.appendChild(txt);
+    li.appendChild(span);
 
     for(i=0;i<close.length;i++){
         close[i].onclick=function(){
